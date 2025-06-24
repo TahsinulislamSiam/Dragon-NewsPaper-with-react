@@ -1,3 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
   
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #403F3F;
+  --color-secondary: #D72050;
+  --color-base-200: #f3f3f3;
+  --color-text-300: #e7e7e7;
+  --color-accent: #706f6f;
+}
+
+*{
+    font-family: "Poppins",sans-serif;
+}
