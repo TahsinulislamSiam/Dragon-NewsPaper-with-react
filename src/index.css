@@ -14,3 +14,7 @@
 *{
     font-family: "Poppins",sans-serif;
 }
+
+a.active{
+  @apply bg-secondary;
+}
