@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 
@@ -12,6 +12,7 @@ const Login = () => {
     console.log({email,password})
     signIn(email,password).then((result)=>{
       const user=result.user;
+      console.log(user);
     })
 
     .catch((error)=>{

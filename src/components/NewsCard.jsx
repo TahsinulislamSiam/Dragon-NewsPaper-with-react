@@ -2,9 +2,11 @@ import React from "react";
 import { FaEye, FaStar } from "react-icons/fa";
 import { format } from "date-fns";
 import { FaRegBookmark } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const {
+    id,
     title,
     rating,
     total_view,
@@ -64,9 +66,9 @@ const NewsCard = ({ news }) => {
       </p>
 
       {/* Read More */}
-      <button className="text-orange-500 font-semibold hover:underline">
+      <Link to={`/news-details/${id}`} className="text-orange-500 font-semibold hover:underline">
         Read More
-      </button>
+      </Link>
 
       {/* Footer with rating and views */}
       <div className="flex items-center justify-between mt-4 border-t pt-3 text-sm text-gray-600">
